@@ -21,6 +21,7 @@ import os
 import cgi
 import encrypter
 import authenticator
+import hasher
 from google.appengine.ext import db
 
 
@@ -28,6 +29,14 @@ from google.appengine.ext import db
 class BlogPost(db.Model):
     subject = db.StringProperty(required=True)
     content = db.TextProperty(required=True)
+    created = db.DateTimeProperty(auto_now_add=True)
+
+
+#defines the entities (blog users) stored in the database
+class BlogUser(db.Model):
+    username = db.StringProperty(requiered=True)
+    hash_n_salt = db.StringProperty(requiered=True)
+    email = db.StringProperty(requiered=False)
     created = db.DateTimeProperty(auto_now_add=True)
 
 
@@ -51,13 +60,18 @@ class Handler(webapp2.RequestHandler):
 def escape_html(s):
     return cgi.escape(s, quote=True)
 
+#anvandes innan jag larde mig templates
 with open('./templates/rot13.html') as f:
     Rot13Html = f.read()
 
 
 class MainPage(Handler):
     def get(self):
-        self.render("main.html")
+        self.response.headers['Content-Type'] = 'text/plain'
+        visits = self.request.cookies.get('visits', 0)
+        visits += 1
+        self.response.headers.add_header('Set-Cookie', 'visits=%s' % visits)
+        self.render("main.html", visits)
 
 
 class Rot13Page(Handler):
@@ -79,7 +93,6 @@ class FizzBuzzPage(Handler):
 
 
 class SignUpPage(Handler):
-
     def get(self):
         self.render('blog_sign_up.html')
 
@@ -106,6 +119,8 @@ class SignUpPage(Handler):
         if error_username or error_password or error_verify or error_email:
             self.render('blog_sign_up.html', username, email, error_username, error_password, error_verify, error_email)
         else:
+            blog_user = BlogUser(username=username, hash_n_salt=(hasher.make_salt()), email=email)
+            blog_user.put()
             return webapp2.redirect('/blog/welcome')
 
 
@@ -140,7 +155,6 @@ class BlogPermalinkPage(Handler):
     def get(self, post_id):
         key = db.Key.from_path('BlogPost', int(post_id))
         post = db.get(key)
-
         self.render("blog_permalink.html", post=post)
 
 
