@@ -34,9 +34,9 @@ class BlogPost(db.Model):
 
 #defines the entities (blog users) stored in the database
 class BlogUser(db.Model):
-    username = db.StringProperty(requiered=True)
-    hash_n_salt = db.StringProperty(requiered=True)
-    email = db.StringProperty(requiered=False)
+    username = db.StringProperty(required=True)
+    hash_n_salt = db.StringProperty(required=True)
+    email = db.StringProperty(required=False)
     created = db.DateTimeProperty(auto_now_add=True)
 
 
@@ -67,11 +67,14 @@ with open('./templates/rot13.html') as f:
 
 class MainPage(Handler):
     def get(self):
-        self.response.headers['Content-Type'] = 'text/plain'
-        visits = self.request.cookies.get('visits', 0)
-        visits += 1
+        #self.response.headers['Content-Type'] = 'text/html'
+        visits = self.request.cookies.get('visits', '0')
+        if visits.isdigit():
+            visits = int(visits) + 1
+        else:
+            visits = 0
         self.response.headers.add_header('Set-Cookie', 'visits=%s' % visits)
-        self.render("main.html", visits)
+        self.render("main.html", visits=visits)
 
 
 class Rot13Page(Handler):
@@ -117,16 +120,24 @@ class SignUpPage(Handler):
         if not email or authenticator.valid_email(email):
             error_email = ""
         if error_username or error_password or error_verify or error_email:
-            self.render('blog_sign_up.html', username, email, error_username, error_password, error_verify, error_email)
+            self.render('blog_sign_up.html',
+                        username=username,
+                        email=email,
+                        error_username=error_username,
+                        error_password=error_password,
+                        error_verify=error_verify,
+                        error_email=error_email)
         else:
             blog_user = BlogUser(username=username, hash_n_salt=(hasher.make_salt()), email=email)
             blog_user.put()
+            self.response.headers.add_header('Set-Cookie', 'username=ssHar')
             return webapp2.redirect('/blog/welcome')
 
 
 class WelcomePage(Handler):
     def get(self):
-        self.render('blog_welcome.html', username=self.request.get('username'))
+        username = self.request.cookies.get('username')
+        self.render('blog_welcome.html', username=username)
 
 
 class BlogFrontPage(Handler):
