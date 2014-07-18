@@ -6,5 +6,9 @@
     </head>
     <body>
         <b>Welcome, {{username}}</b>
+        <br>
+        {% if created %}
+        <b>You registered {{created}}</b>
+        {% endif %}
     </body>
 </html>

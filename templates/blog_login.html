@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Log in</title>
+    </head>
+    <body>
+        <form method="post">
+            Username: <input type="text" name="username" value="{{username}}"><br>
+            Password: <input type="password" name="password"><br>
+            {{error_invalid_login}}
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

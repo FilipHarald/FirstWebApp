@@ -35,7 +35,7 @@ class BlogPost(db.Model):
 #defines the entities (blog users) stored in the database
 class BlogUser(db.Model):
     username = db.StringProperty(required=True)
-    hash_n_salt = db.StringProperty(required=True)
+    pw_hash = db.StringProperty(required=True)
     email = db.StringProperty(required=False)
     created = db.DateTimeProperty(auto_now_add=True)
 
@@ -100,6 +100,7 @@ class SignUpPage(Handler):
         self.render('blog_sign_up.html')
 
     def post(self):
+        error_user_exists = "A user with that name does already exist."
         error_username = "That's not a valid username."
         error_password = "That's not a valid password."
         error_verify = "The passwords does not match."
@@ -109,6 +110,10 @@ class SignUpPage(Handler):
         verify = self.request.get("verify")
         email = self.request.get("email")
         if username:
+            q = db.GqlQuery("SELECT * FROM BlogUser WHERE username = '%s'" % username)
+            user = q.get()
+            if not user:
+                error_user_exists = ""
             if authenticator.valid_username(username):
                 error_username = ""
         if password:
@@ -119,25 +124,63 @@ class SignUpPage(Handler):
                 error_verify = ""
         if not email or authenticator.valid_email(email):
             error_email = ""
-        if error_username or error_password or error_verify or error_email:
+        if error_user_exists or error_username or error_password or error_verify or error_email:
             self.render('blog_sign_up.html',
                         username=username,
                         email=email,
+                        error_user_exists=error_user_exists,
                         error_username=error_username,
                         error_password=error_password,
                         error_verify=error_verify,
                         error_email=error_email)
         else:
-            blog_user = BlogUser(username=username, hash_n_salt=(hasher.make_salt()), email=email)
+            blog_user = BlogUser(username=username, pw_hash=(hasher.make_pw_hash(username, password)), email=email)
             blog_user.put()
-            self.response.headers.add_header('Set-Cookie', 'username=ssHar')
-            return webapp2.redirect('/blog/welcome')
+            user_id = str(blog_user.key().id())
+            cookie_text = hasher.make_secure_val(user_id)
+            self.response.headers.add_header('Set-Cookie', 'user_id=%s; Path=/' % cookie_text)
+            self.redirect('/blog/welcome')
+
+
+class LoginPage(Handler):
+    def get(self):
+        self.render('blog_login.html')
+
+    def post(self):
+        error_invalid_login = "Invalid login"
+        username = self.request.get("username")
+        password = self.request.get("password")
+        if username:
+            q = db.GqlQuery("SELECT * FROM BlogUser WHERE username = '%s'" % username)
+            blog_user = q.get()
+            if blog_user:
+                if hasher.valid_pw(username, password, blog_user.pw_hash):
+                    user_id = str(blog_user.key().id())
+                    cookie_text = hasher.make_secure_val(user_id)
+                    self.response.headers.add_header('Set-Cookie', 'user_id=%s; Path=/' % cookie_text)
+                    self.redirect('/blog/welcome')
+                else:
+                    self.render('blog_login.html', username=username, error_invalid_login=error_invalid_login)
+            else:
+                self.render('blog_login.html', username=username, error_invalid_login=error_invalid_login)
+
+
+class LogoutPage(Handler):
+    def get(self):
+        self.response.headers.add_header('Set-Cookie', 'user_id=; Path=/')
+        self.redirect('/blog/signup')
 
 
 class WelcomePage(Handler):
     def get(self):
-        username = self.request.cookies.get('username')
-        self.render('blog_welcome.html', username=username)
+        user_cookie = self.request.cookies.get('user_id')
+        user_id = hasher.check_secure_val(user_cookie)
+        if user_id:
+            key = db.Key.from_path('BlogUser', int(user_id))
+            username = (db.get(key)).username
+            self.render('blog_welcome.html', username=username)
+        else:
+            self.redirect('/blog/signup')
 
 
 class BlogFrontPage(Handler):
@@ -172,6 +215,8 @@ class BlogPermalinkPage(Handler):
 app = webapp2.WSGIApplication([('/', MainPage),
                                ('/Rot13', Rot13Page),
                                ('/blog/signup', SignUpPage),
+                               ('/blog/login', LoginPage),
+                               ('/blog/logout', LogoutPage),
                                ('/blog/welcome', WelcomePage),
                                ('/FizzBuzz', FizzBuzzPage),
                                ('/blog', BlogFrontPage),

@@ -26,27 +26,20 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30992737" vertical-offset="2564" max-vertical-offset="4020">
-              <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
+            <state vertical-scroll-proportion="2.3403416" vertical-offset="1687" max-vertical-offset="3927">
+              <caret line="204" column="13" selection-start-line="204" selection-start-column="13" selection-end-line="204" selection-end-column="13" />
               <folding>
-                <element signature="e#830#970#0" expanded="false" />
-                <element signature="e#1495#1778#0" expanded="false" />
-                <element signature="e#1805#1837#0" expanded="false" />
-                <element signature="e#2370#2666#0" expanded="false" />
-                <element signature="e#2702#2820#0" expanded="false" />
-                <element signature="e#4611#4753#0" expanded="false" />
-                <element signature="e#4792#5287#0" expanded="false" />
-                <element signature="e#5328#5489#0" expanded="false" />
+                <element signature="e#602#616#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authenticator.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authenticator.py">
+      <file leaf-file-name="blog_front.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/blog_front.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="272">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -55,28 +48,48 @@
       <file leaf-file-name="blog_sign_up.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/blog_sign_up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="357">
-              <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
+            <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="357">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main.html">
+      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="408">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="442">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_welcome.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/blog_welcome.html">
+      <file leaf-file-name="authenticator.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authenticator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hasher.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hasher.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="782">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="encrypter.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/encrypter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="612">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -114,19 +127,22 @@
         <option value="$PROJECT_DIR$/templates/blog_new_post.html" />
         <option value="$PROJECT_DIR$/templates/blog_front.html" />
         <option value="$PROJECT_DIR$/templates/blog_permalink.html" />
-        <option value="$PROJECT_DIR$/templates/blog_sign_up.html" />
-        <option value="$PROJECT_DIR$/templates/blog_welcome.html" />
         <option value="$PROJECT_DIR$/Hasher.py" />
         <option value="$PROJECT_DIR$/templates/main.html" />
+        <option value="$PROJECT_DIR$/templates/blog_login.html" />
+        <option value="$PROJECT_DIR$/hasher.py" />
+        <option value="$PROJECT_DIR$/templates/blog_welcome.html" />
+        <option value="$PROJECT_DIR$/encrypter.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/templates/blog_sign_up.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="89" />
-    <option name="width" value="1938" />
-    <option name="height" value="1000" />
+    <option name="x" value="960" />
+    <option name="y" value="98" />
+    <option name="width" value="960" />
+    <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -154,7 +170,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,10 +204,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Python27/python.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="settings.github" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -348,14 +364,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="89" width="1938" height="1000" extended-state="6" />
+    <frame x="960" y="98" width="960" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28237793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -392,21 +408,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/blog_sign_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="357">
-          <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog_new_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="289">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/blog_permalink.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="204">
@@ -433,14 +434,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3264">
           <caret line="150" column="48" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,14 +458,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2618">
           <caret line="26" column="92" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -495,14 +482,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="2618">
           <caret line="26" column="92" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -526,14 +506,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2244" max-vertical-offset="2465">
           <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -557,14 +530,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1411">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -574,14 +540,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1411">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -591,14 +550,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1411">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,14 +560,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1105">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -625,14 +570,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,14 +594,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="799">
           <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -680,14 +611,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -718,14 +642,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -744,27 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="391">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/encrypter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17548387" vertical-offset="0" max-vertical-offset="775">
@@ -776,27 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19125" vertical-offset="0" max-vertical-offset="800">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog_front.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="272">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog_permalink.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="204">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -814,10 +689,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hasher.py">
+    <entry file="file://$PROJECT_DIR$/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog_permalink.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="999">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="204">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="357">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -828,31 +715,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/blog_welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="323">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog_sign_up.html">
+    <entry file="file://$PROJECT_DIR$/index.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="357">
-          <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
-          <folding />
+        <state vertical-scroll-proportion="0.23345818" vertical-offset="0" max-vertical-offset="801">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main.html">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="408">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encrypter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -860,24 +747,64 @@
     <entry file="file://$PROJECT_DIR$/authenticator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hasher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="442">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="748">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog_sign_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="357">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog_front.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="272">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30992737" vertical-offset="2564" max-vertical-offset="4020">
-          <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
+        <state vertical-scroll-proportion="2.3403416" vertical-offset="1687" max-vertical-offset="3927">
+          <caret line="204" column="13" selection-start-line="204" selection-start-column="13" selection-end-line="204" selection-end-column="13" />
           <folding>
-            <element signature="e#830#970#0" expanded="false" />
-            <element signature="e#1495#1778#0" expanded="false" />
-            <element signature="e#1805#1837#0" expanded="false" />
-            <element signature="e#2370#2666#0" expanded="false" />
-            <element signature="e#2702#2820#0" expanded="false" />
-            <element signature="e#4611#4753#0" expanded="false" />
-            <element signature="e#4792#5287#0" expanded="false" />
-            <element signature="e#5328#5489#0" expanded="false" />
+            <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>

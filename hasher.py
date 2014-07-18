@@ -1,8 +1,12 @@
 import hashlib
 import random
 import string
+import hmac
+
+SECRET = 'TOPSECRETSECRET'
 
 
+#For databas
 def make_salt():
     return ''.join(random.choice(string.ascii_letters) for x in range(5))
 
@@ -15,7 +19,22 @@ def make_pw_hash(name, pw, salt=None):
 
 
 def valid_pw(name, pw, h):
-    salt = h.split(', ')[1]
+    salt = h.split(',')[1]
     return h == make_pw_hash(name, pw, salt)
+#-----
 
+
+#For cookies
+def hash_str(s):
+    return hmac.new(SECRET, s).hexdigest()
+
+
+def make_secure_val(s):
+    return "%s|%s" % (s, hash_str(s))
+
+
+def check_secure_val(h):
+    val = h.split('|')[0]
+    if h == make_secure_val(val):
+        return val
 
